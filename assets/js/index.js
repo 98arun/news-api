@@ -17,7 +17,7 @@ xhr.open(
 
 // What to do when response is ready
 xhr.onload = function () {
-  if (this.status === 200) {
+  if (this.status === 200 || this.status === 426) {
     let res = JSON.parse(this.responseText);
     console.log(res);
     let articles = res.articles;
@@ -45,7 +45,7 @@ xhr.onload = function () {
 
       newsHtml += news;
     });
-    console.log(newsHtml);
+    // console.log(newsHtml);
     stateNews.innerHTML = newsHtml;
   } else {
     console.log("Some error occurred");
