@@ -1,7 +1,7 @@
 console.log("JS is here");
 
 // Initialize the news api parameters
-let source = "The Hindu";
+let source = "The Times of India";
 let apiKey = "758a44ea44b14baebcc191b524ae2e4b";
 
 // Grab the news container
